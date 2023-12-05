@@ -125,6 +125,7 @@ html {
 }
 
 /*how to make generic css grids using multiple class styles*/
+
 .grid {
   display: grid;
   gap: 9.6rem;
@@ -268,5 +269,8 @@ html {
 
 .section-how {
   padding: 9.6px 0;
-  background-color: orangered;
+}
+
+.step-img {
+  width: 100%;
 }
