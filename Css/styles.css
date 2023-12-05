@@ -284,3 +284,28 @@
   width: 2.4rem;
   color: #e67e22;
 }
+
+.diet-list {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 1.6rem;
+}
+
+.diet-item {
+  font-size: 1.8rem;
+  display: flex;
+  align-items: center;
+  gap: 1.6rem;
+}
+
+.diet-icon {
+  width: 3.2rem;
+  height: 3.2rem;
+  color: #e67e22;
+}
+
+.all-recipes {
+  text-align: center;
+  font-size: 1.8rem;
+}
