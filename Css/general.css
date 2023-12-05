@@ -43,6 +43,7 @@
     -06 BORDER-RADIUS
       
       Default: 9px;
+      Medium: 11px
 
     -07 WHITESPACE
 
@@ -184,4 +185,8 @@ html {
 
 .grid--4-cols {
   grid-template-columns: repeat(4, 1fr);
+}
+
+strong {
+  font-weight: 500;
 }
