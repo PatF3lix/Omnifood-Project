@@ -14,10 +14,9 @@
     
     -02 COLORS
 
-    Primary #e67e22
-
-    Tints: 
-    Shades: 
+    Primary: #e67e22
+    Tints: #fdf2e9
+    Shades: #cf711f
     Accents: 
     Greys: 
         - #555
@@ -40,7 +39,7 @@
 }
 
 body {
-  font-family: sans-serif;
+  font-family: "Rubik", "Inter", sans-serif;
   line-height: 1;
   font-weight: 400;
   color: #555;
@@ -99,6 +98,7 @@ html {
    smoothly, over a given duration.
    Put transition on the original state */
   transition: background-color 0.3s;
+  font-weight: 600;
 }
 
 /*Start eating well btn*/
@@ -132,4 +132,39 @@ html {
   background-color: #fdf2e9;
   /*trick to have a border inside the btn*/
   box-shadow: inset 0 0 0 3px #fff;
+}
+
+/* Client imgaes hero section*/
+
+.delievered-meals {
+  display: flex;
+  margin-top: 8rem;
+  align-items: center;
+  gap: 2.4rem;
+}
+
+.delivered-imgs {
+  display: flex;
+}
+
+.delivered-imgs img {
+  height: 5.7rem;
+  width: 5.7rem;
+  border-radius: 50%;
+  margin-right: -1.6rem; /* overlap imgs*/
+  border: 3px solid #fdf2e9;
+}
+
+.delivered-imgs img:last-child {
+  margin-right: 0;
+}
+
+.delivered-text {
+  font-size: 1.8rem;
+  font-weight: 600;
+}
+
+.delivered-text span {
+  color: #e67e22;
+  font-weight: 700;
 }
