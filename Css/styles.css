@@ -44,3 +44,10 @@ body {
   font-weight: 400;
   color: #555;
 }
+
+html {
+  /*In order to set the rem = to 10px
+    10px / 16px = 0.625 = 62.5%
+    Percentage of user's browser font-size setting*/
+  font-size: 62.5%;
+}

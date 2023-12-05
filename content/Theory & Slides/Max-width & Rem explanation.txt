@@ -1,0 +1,26 @@
+html {
+  /*In order to set the rem = to 10px
+    10px / 16px = 0.625 = 62.5%
+    Percentage of user's browser font-size setting*/
+    
+  font-size: 62.5%;
+}
+
+.test {
+  background-color: red;
+  padding: 100px;
+
+  /*If the container width is larger than the specified max-width, then the width of the element 
+    is equal to the value that was specified for max-width. However, if the container width is less
+    than the specified max-width, then the width of the element will be 100% of the container element width.*/
+  
+  /** max-width: 1000px;*/
+
+  /*Rem (short for “root-em” html el) units dictate an element's font size relative
+    to the size of the root element. By default, most browsers use a font size value of 16px.
+    So, if the root element is 16px, an element with the value 1rem will also equal 16px.
+    *1 rem -> 16px, 50rem -> 50 * 16px = 800px, 
+    unless user specifies a different root element font size*/
+
+  max-width: 50rem;
+}
