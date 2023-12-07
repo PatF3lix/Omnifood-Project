@@ -24,6 +24,7 @@
         - #fdf2e9
         - #fae5d3
         - #e4dad2
+        - #eb984e
         
     Shades: 
         - #cf711f
@@ -36,10 +37,12 @@
 
     -03 LETTER SPACING
 
-    -0.5px
-    0.75px
+      -0.5px
+      -0.75px
 
     -05 SHADOWS
+
+      - 0 2.4rem 4.8rem rgba(0, 0, 0, 0.075);
 
     -06 BORDER-RADIUS
       
