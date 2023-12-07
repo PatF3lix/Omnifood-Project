@@ -175,6 +175,26 @@ html {
   padding: 0 3.2rem;
 }
 
+.list {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 1.6rem;
+}
+
+.list-item {
+  font-size: 1.8rem;
+  display: flex;
+  align-items: center;
+  gap: 1.6rem;
+}
+
+.list-icon {
+  width: 3.2rem;
+  height: 3.2rem;
+  color: #e67e22;
+}
+
 /*how to make generic css grids using multiple class styles*/
 
 .grid {
