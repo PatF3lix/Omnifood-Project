@@ -28,6 +28,8 @@
         
     Shades: 
         - #cf711f
+        - #45260a;
+        - 
     Accents: 
 
     Greys: 
@@ -115,6 +117,7 @@ html {
   letter-spacing: 0.75px;
 }
 
+.btn,
 .btn:link,
 .btn:visited {
   display: inline-block;
@@ -122,6 +125,10 @@ html {
   font-size: 2rem;
   padding: 1.6rem 3.2rem;
   border-radius: 9px;
+
+  border: none;
+  cursor: pointer;
+  font-family: inherit;
 
   /*CSS transitions allows you to change property values 
    smoothly, over a given duration.
@@ -153,6 +160,18 @@ html {
   background-color: #fdf2e9;
   /*trick to have a border inside the btn*/
   box-shadow: inset 0 0 0 3px #fff;
+}
+
+.btn-form {
+  background-color: #45260a;
+  color: #fdf2e9;
+  align-self: end;
+  padding: 1rem;
+}
+
+.btn-form:hover {
+  background-color: #fdf2e9;
+  color: #45260a;
 }
 
 .link:link,
@@ -231,6 +250,10 @@ strong {
   font-weight: 500;
 }
 
+*:focus {
+  outline: none;
+  box-shadow: 0 0 0 0.8rem rgba(230, 125, 34, 0.5);
+}
 /*HELPER/settings CLASSES*/
 
 .margin-right-sm {
