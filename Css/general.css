@@ -203,6 +203,11 @@ html {
   row-gap: 9.6rem;
 }
 
+/*for multiple grids in the same section*/
+
+.grid:not(:last-child) {
+  margin-bottom: 9.6rem;
+}
 .grid--items-center {
   align-items: center;
 }
