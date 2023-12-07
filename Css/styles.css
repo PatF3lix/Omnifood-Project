@@ -365,10 +365,16 @@
   padding: 9.6rem 0;
 }
 
+.pricing-plan {
+  border-radius: 11px;
+  width: 75%;
+}
+
 .plan-header {
   text-align: center;
   margin-bottom: 4.8rem;
 }
+
 .plan-name {
   color: #cf711f;
   font-weight: 600;
@@ -399,4 +405,32 @@
 .plan-sign-up {
   text-align: center;
   margin-top: 4.8rem;
+}
+
+.starter.plan {
+  justify-self: end;
+  border: 2px solid #fdf2e9;
+  padding: 4.6rem;
+}
+
+.complete-plan {
+  background-color: #fdf2e9;
+  padding: 4.8rem;
+  position: relative;
+  overflow: hidden;
+}
+
+.complete-plan::after {
+  content: "Best Value";
+  position: absolute;
+  top: 6%;
+  right: -18%;
+
+  text-transform: uppercase;
+  font-size: 1.4rem;
+  font-weight: 700;
+  background-color: #ffd43b;
+
+  padding: 0.8rem 8rem;
+  transform: rotate(45deg);
 }
