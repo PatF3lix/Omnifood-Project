@@ -21,10 +21,26 @@ checkFlexGap();
 
 //https://unpkg.com/smoothscroll-polyfill@0.4.4/dist/smoothscroll.min.js
 
+/**Set Current Year */
 const updateYear = function () {
   const yearEl = document.querySelector(".year");
   const currentYear = new Date().getFullYear();
   yearEl.textContent = currentYear;
 };
 
-updateYear();
+/**Make mobile Navigation functional */
+const toggleMobileNavMenu = function () {
+  const btnNavEl = document.querySelector(".btn-mobile-nav");
+  const HeaderEl = document.querySelector(".header");
+
+  btnNavEl.addEventListener("click", () =>
+    HeaderEl.classList.toggle("nav-open")
+  );
+};
+
+const init = function () {
+  updateYear();
+  toggleMobileNavMenu();
+};
+
+init();
