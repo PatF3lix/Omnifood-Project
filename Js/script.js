@@ -37,7 +37,6 @@ const toggleMobileNavMenu = function () {
 };
 
 /* Smooth scrolling */
-
 const smoothScrolling = function () {
   const allLinks = document.querySelectorAll("a:link");
   allLinks.forEach((link) =>
@@ -72,7 +71,6 @@ const smoothScrolling = function () {
 };
 
 /**Sticky Navigation */
-
 const stickyNav = function () {
   const sectionHeroEl = document.querySelector(".section-hero");
 
