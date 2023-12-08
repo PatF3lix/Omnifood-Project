@@ -82,6 +82,8 @@ html {
     Percentage of user's browser font-size setting*/
   font-size: 62.5%;
   overflow-x: hidden; /* in order to hiden the mobile menu*/
+  /*doesn't work on SAFARI and Microsoft Edge*/
+  /*scroll-behavior: smooth;*/
 }
 
 /* ------------------------------ -*/

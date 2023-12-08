@@ -19,16 +19,14 @@ function checkFlexGap() {
 
 checkFlexGap();
 
-//https://unpkg.com/smoothscroll-polyfill@0.4.4/dist/smoothscroll.min.js
-
-/**Set Current Year */
+/* Set Current Year */
 const updateYear = function () {
   const yearEl = document.querySelector(".year");
   const currentYear = new Date().getFullYear();
   yearEl.textContent = currentYear;
 };
 
-/**Make mobile Navigation functional */
+/* Make mobile Navigation functional */
 const toggleMobileNavMenu = function () {
   const btnNavEl = document.querySelector(".btn-mobile-nav");
   const HeaderEl = document.querySelector(".header");
@@ -38,9 +36,45 @@ const toggleMobileNavMenu = function () {
   );
 };
 
+/* Smooth scrolling */
+
+const smoothScrolling = function () {
+  const allLinks = document.querySelectorAll("a:link");
+  allLinks.forEach((link) =>
+    link.addEventListener("click", function (e) {
+      e.preventDefault();
+      const target = e.target.closest("a:link");
+
+      if (!target) return;
+
+      const href = target.getAttribute("href");
+      if (href === "#") {
+        window.scrollTo({
+          top: 0,
+          behavior: "smooth",
+        });
+      }
+
+      /**Scroll to other links */
+      if (href != "#" && href.startsWith("#")) {
+        const sectionEl = document.querySelector(href);
+        sectionEl.scrollIntoView({
+          behavior: "smooth",
+        });
+      }
+
+      const HeaderEl = document.querySelector(".header");
+      /**Close mobile Navigation */
+      if (target.classList.contains("main-nav-link"))
+        HeaderEl.classList.toggle("nav-open");
+    })
+  );
+};
+
 const init = function () {
   updateYear();
   toggleMobileNavMenu();
+  smoothScrolling();
 };
 
 init();
