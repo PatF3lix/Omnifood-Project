@@ -90,11 +90,18 @@
             </div>
           </div>
           <div class="hero-image-box">
-            <img
-              class="hero-img"
-              src="content/img/hero.png"
-              alt="Women enjoying food, meals in storage container, and food bowls on a table"
-            />
+            <!-- Tools used: Sqoosh and any resizing free app.
+               compress image around 200kb, then use the picture el, like so,
+                this will enable an alternative in case webp is not supported -->
+            <picture>
+              <source srcset="content/img/hero.webp," type="image/webp">
+              <source srcset="content/img/hero.png," type="imge/png">
+              <img
+                class="hero-img"
+                src="content/img/hero.png"
+                alt="Women enjoying food, meals in storage container, and food bowls on a table"
+              />
+            </picture>
           </div>
         </div>
       </section>
@@ -566,11 +573,12 @@
                 first meal is on us!
               </p>
 
-              <form class="cta-form" action="#">
+              <form class="cta-form" action="#" name="sign-up">
                 <div>
                   <label for="full-name">Full Name</label>
                   <input
                     id="full-name"
+                    name="full-name"
                     type="text"
                     placeholder="John Smith"
                     required
@@ -582,6 +590,7 @@
                     id="email"
                     type="email"
                     placeholder="me@example.com"
+                    name="email"
                     required
                   />
                 </div>
